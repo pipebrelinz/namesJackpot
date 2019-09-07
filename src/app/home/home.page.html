@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <h3>Felipe Barragán Nuñez</h3>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-text-center">
+    <h3>Names Jackpot</h3>
+  </div>
+
+  <div class="text_area">
+    <ion-item>
+      <ion-textarea placeholder="Write the names and separate by"[(ngModel)]="name"></ion-textarea>
+    </ion-item>
+  </div>
+
+  <div class="play-button">
+    <ion-item>
+      <ion-button (click)="addNames()">Play</ion-button>
+    </ion-item>
+  </div>
+
+  <div class="ion-text-center">
+    <ion-label>{{actName}}</ion-label>
+  </div>
+</ion-content>
